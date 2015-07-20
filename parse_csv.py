@@ -24,7 +24,6 @@ for product_info in glob.glob("*product_info.csv"):
                     writer_combinations = csv.writer(csvfile_output_combinations, delimiter=';')
                     fieldnames = product_info_reader.next()
                     fieldnames.pop()
-                    fieldnames.pop()
                     fieldnames.append('Images URL')
                     fieldnames.append('Web Only')
                     product_image_reader.next()
